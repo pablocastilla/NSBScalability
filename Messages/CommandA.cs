@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NServiceBus;
 
-namespace ServiceA
+namespace Messages
 {
-    public class Class1
+    public class CommandA: ICommand
     {
+        public int Id { get; set; }
     }
 }
